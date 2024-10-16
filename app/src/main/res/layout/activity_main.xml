@@ -78,12 +78,11 @@
         android:id="@+id/buttonGraph"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="316dp"
+        android:layout_marginBottom="276dp"
         android:text="Graf"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/buttonAnimate"
         app:layout_constraintStart_toEndOf="@id/buttonCalculate"
-        app:layout_constraintTop_toBottomOf="@id/editTextAngle"
-        app:layout_constraintVertical_bias="0.681" />
+        app:layout_constraintTop_toBottomOf="@id/editTextAngle" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
