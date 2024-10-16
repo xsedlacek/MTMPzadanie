@@ -2,7 +2,9 @@ package com.example.mtmpzadanie
 
 import android.os.Parcel
 import android.os.Parcelable
+import kotlinx.serialization.Serializable
 
+@Serializable
 data class CoordinateData(val x: Double, val y: Double, val t: Double) : Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readDouble(),

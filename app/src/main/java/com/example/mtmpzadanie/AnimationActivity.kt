@@ -6,6 +6,7 @@ import android.graphics.Canvas
 import android.graphics.Color
 import android.graphics.Paint
 import android.os.Bundle
+import android.util.Log
 import android.view.SurfaceHolder
 import android.view.SurfaceView
 import androidx.appcompat.app.AppCompatActivity
@@ -56,8 +57,11 @@ class AnimationActivity : AppCompatActivity() {
     private fun animateBall(canvas: Canvas) {
         if (coordinates != null && currentIndex < coordinates!!.size) {
             val coord = coordinates!![currentIndex]
-            ballX = coord.t.toFloat() * 20
+
+            ballX = coord.x.toFloat() * 20
             ballY = canvas.height - (coord.y.toFloat() * 20)
+
+            Log.d("AnimationActivity", "BallX: $ballX, BallY: $ballY")
 
             canvas.drawBitmap(ballBitmap!!, ballX - ballBitmap!!.width / 2, ballY - ballBitmap!!.height / 2, paint)
 
